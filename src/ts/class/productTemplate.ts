@@ -183,26 +183,26 @@ export class ProductTemplate {
                     case `${stringFormat(model.getModel()).toString()}-paint-black`:
                         model.setPaintDefault(PaintType.Black)
                         setCost(model)
-                        image.src = `/build/images/${stringFormat(model.getModel()).toString()}_black_2.jpeg`
+                        image.src = `images/${stringFormat(model.getModel()).toString()}_black_2.jpeg`
                         HTMLPrice.innerHTML = `Precio: ${model.totalCost} €`
                         break;
                     case `${stringFormat(model.getModel()).toString()}-paint-blue`:
                         model.setPaintDefault(PaintType.Blue)
                         setCost(model)
-                        image.src = `/build/images/${stringFormat(model.getModel()).toString()}_blue_2.jpeg`
+                        image.src = `images/${stringFormat(model.getModel()).toString()}_blue_2.jpeg`
                         HTMLPrice.innerHTML = `Precio: ${model.totalCost} €`
                         break;
                     case `${stringFormat(model.getModel()).toString()}-paint-red`:
                         model.setPaintDefault(PaintType.Red)
                         setCost(model)
-                        image.src = `/build/images/${stringFormat(model.getModel()).toString()}_red_2.jpeg`
+                        image.src = `images/${stringFormat(model.getModel()).toString()}_red_2.jpeg`
                         HTMLPrice.innerHTML = `Precio: ${model.totalCost} €`
                         break;
                 
                     default:
                         model.setPaintDefault(PaintType.White)
                         setCost(model)
-                        image.src = `/build/images/${stringFormat(model.getModel()).toString()}_white_2.jpeg`
+                        image.src = `images/${stringFormat(model.getModel()).toString()}_white_2.jpeg`
                         HTMLPrice.innerHTML = `Precio: ${model.totalCost} €`
                         break;
                 }

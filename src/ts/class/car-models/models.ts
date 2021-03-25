@@ -72,7 +72,7 @@ export class ModelS implements CarBuilder{
         this.car.setMotorType('AWD')
     }
     buildImages() {
-        this.car.setImages(['/build/images/models_white.jpeg', '/build/images/models_white_2.jpeg'])
+        this.car.setImages(['images/models_white.jpeg', 'images/models_white_2.jpeg'])
     }
     getCar(): Car {
         return this.car

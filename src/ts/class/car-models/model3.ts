@@ -64,7 +64,7 @@ export class Model3 implements CarBuilder{
         this.car.setMotorType('AWD')
     }
     buildImages() {
-        this.car.setImages(['/build/images/model3_white.jpeg', '/build/images/model3_white_2.jpeg'])
+        this.car.setImages(['images/model3_white.jpeg', 'images/model3_white_2.jpeg'])
     }
     buildTotalCost(){
         return this.car.setTotalCost(
