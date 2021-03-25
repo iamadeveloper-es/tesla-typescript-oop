@@ -1,0 +1,160 @@
+.car-container{
+    margin: 150px 0;
+    h2{
+        text-align: center;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .car-info{
+        .info{
+            text-align: center;
+            margin: 20px;
+        }
+        .output{
+            display: block;
+            font-size: 35px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        small{
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+    .car-buttons{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .car-custom-menu{
+        border: 1px solid $lightGrey;
+        &.hide{
+            display: none;
+        }
+        &.show{
+            display: block;
+        }
+        h3{
+            font-weight: normal;
+        }
+        h3 span{
+            font-size: 28px;
+            font-weight: bolder;
+        }
+        .car-price{
+            margin-top: 30px;
+            span{
+                border: 1px solid $lightGrey;
+                padding: 20px;
+                font-size: 22px;
+                font-weight: 600;
+            }
+        }
+        .flex-container{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .flex-item{
+            padding: 50px;
+            width: 100%;
+        }
+    }
+    .custom{
+        ul{
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .li-option{
+            position: relative;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            width: 80px;
+            align-items: center;
+            margin: 7px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .option{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 1px solid $lightGrey;
+            margin: 5px;
+            cursor: pointer;
+            &.active{
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    background-color: #82c5fc;
+                    z-index: -10;
+                }
+            }
+        }
+        .paint-options{
+            li{
+                &.white{
+                    .option{
+                    background-color: $white;
+                    }
+                }
+                &.black{
+                    .option{
+                    background-color: $black;
+                    }
+                }
+                &.blue{
+                    .option{
+                    background-color: $blue;
+                    }
+                }
+                &.red{
+                    .option{
+                    background-color: $red;
+                    }
+                }
+            }
+        }
+        .wheels-options{
+            li{
+               .option{
+                    background-color: $white;
+                }
+            }
+        }
+        .interior-options{
+            li{
+                &.white{
+                    .option{
+                    background-color: $white;
+                    }
+                }
+                &.black{
+                    .option{
+                    background-color: $black;
+                    }
+                }
+                &.cream{
+                    .option{
+                    background-color: $cream;
+                    }
+                }
+            }
+        }
+        .auto-pilot-options{
+            .option{
+                background-color: $white;
+            }
+        }
+    }
+    
+}

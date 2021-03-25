@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.wrapper{
+    width: 100%;
+    max-width: 1440px;
+    @include marginAuto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.fluid{
+    width: 100%;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-center{
+    justify-content: center;
+}
+.flex-v-center{
+    align-items: center;
+}
+.lead{
+    font-size: 24px;
+    font-weight: bolder;
+}
